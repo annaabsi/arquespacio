@@ -63,6 +63,17 @@ header{
 	text-transform: uppercase;
 }
 
+.navbar-brand {
+    width: 150px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.navbar-brand img {
+	height: 100px;
+    margin-top: -12px;
+	margin-left: -80px;
+}
 
 /*Services*/
 .services{
@@ -212,6 +223,12 @@ margin-top: 80px;
 @media(max-width: 767px){
 	.imac{
 		margin-top: 20px
+	}
+	.home_text h1{
+		font-size: 26px;
+	}
+	.home_text h2{
+		font-size: 15px;
 	}
 }
 .single_image{
