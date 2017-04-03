@@ -26,7 +26,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Background Slider -->
+    <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Style -->
@@ -53,57 +54,56 @@
 
 
     <header id="HOME" style="background-position: 50% -125px;">
-	        <div class="section_overlay">
-	            <nav class="navbar navbar-default navbar-fixed-top">
-	              <div class="container">
-	                <!-- Brand and toggle get grouped for better mobile display -->
-	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                  </button>
-	                  <a class="navbar-brand" href="#HOME"><img src="images/logo-new.png" alt=""></a>
-	                </div>
+        <div class="section_overlay">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#HOME"><img src="images/logo-new.png" alt=""></a>
+                </div>
 
-	                <!-- Collect the nav links, forms, and other content for toggling -->
-	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                  <ul class="nav navbar-nav navbar-right">
-	                    <li><a href="#HOME">Inicio</a></li>
-	                    <li><a href="#ABOUT">Quienes Somos</a></li>
-                        <li><a href="#SERVICE">Servicios</a></li>
-	                    <li><a href="#TESTIMONIAL">Equipo</a></li>
-	                    <li><a href="#WORK">Experiencia</a></li>
-	                    <li><a href="#CONTACT">Contacto</a></li>
-	                  </ul>
-	                </div><!-- /.navbar-collapse -->
-	              </div><!-- /.container -->
-	            </nav> 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#HOME">Inicio</a></li>
+                    <li><a href="#ABOUT">Quienes Somos</a></li>
+                    <li><a href="#SERVICE">Servicios</a></li>
+                    <li><a href="#TESTIMONIAL">Equipo</a></li>
+                    <li><a href="#WORK">Experiencia</a></li>
+                    <li><a href="#CONTACT">Contacto</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container -->
+            </nav>
 
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="home_text wow fadeInUp animated">
-	                            <h1>Arquespacio</h1><h2>Arquitectura, Ingeniería y Construcción</h2>
-                                <br>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="home_text wow fadeInUp animated">
+                            <h1>Arquespacio</h1><h2>Arquitectura, Ingeniería y Construcción</h2>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="scroll_down">
-                                <a href="#ABOUT"><img src="images/scroll.png" alt="Scroll">
-	                            <h4>Click Aquí</h4></a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>            
-	        </div>  
-	    </section>         
+            <!--<div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="scroll_down">
+                            <a href="#ABOUT"><img src="images/scroll.png" alt="Scroll">
+                            <h4>Click Aquí</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </header>
 
     <section class="about_us_area" id="ABOUT">
@@ -515,7 +515,22 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
-
+    <!-- Background Slider -->
+    <script src="js/vegas/vegas.min.js"></script>
+    <script>
+        $('header').vegas({
+            delay: 9000,
+            timer: false,
+            transitionDuration: 2000,
+            slides: [
+                { src: 'images/001HD.jpg' },
+                { src: 'images/002HD.jpg' },
+                { src: 'images/003HD.jpg' }
+            ],
+            transition: 'swirlRight',
+            animation: 'kenburns'
+        });
+    </script>
 
 
 
