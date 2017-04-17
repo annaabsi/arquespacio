@@ -37,7 +37,7 @@ text-transform: uppercase;
 }
 .home_text{
 	padding-top: 210px;
-	padding-bottom: 170px;
+	padding-bottom: 205px;
 }
 .home_text h1{
 	color: #010101;
@@ -91,7 +91,7 @@ text-transform: uppercase;
 	padding-bottom: 96px;
 }
 .single_service i{
-	font-size: 25px;
+	font-size: 30px;
 	color:  #E97D31;
 }
 .single_service h2{
@@ -387,7 +387,6 @@ background-color: #f1f1f1;
 padding: 20px 30px 0 30px;
 }
 .contact-form .form-control{
-height: 43px;
 border-radius: 0px;
 margin-bottom: 20px;
 border: 0px solid #fff;
