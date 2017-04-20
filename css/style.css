@@ -492,3 +492,15 @@ letter-spacing: 0px;
 	width: 60%;
 	margin: 20px 0;
 }
+
+.logo-icon {
+	height: 50px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.logo-icon img {
+	height: 75px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
