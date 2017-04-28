@@ -88,7 +88,7 @@ text-transform: uppercase;
 	border-bottom: 1px solid #ddd;
 }
 .single_service{
-	padding-bottom: 96px;
+	min-height: 180px;
 }
 .single_service i{
 	font-size: 30px;
@@ -98,10 +98,12 @@ text-transform: uppercase;
 	color: #000000;
 	font-size: 25px;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 .single_service p{
 	color: #404040;
 	font-size: 14px;
+	margin-top: 15px;
 }
 .single_progress_bar .progress {
 height: 1px;
